@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    //color
+    <color name="tram">#00000000</color>
+
+
+    //animal
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation" tools:ignore="PrivateResource">
+            @anim/abc_slide_in_bottom
+        </item>
+        <item name="android:windowExitAnimation" tools:ignore="PrivateResource">
+            @anim/abc_slide_out_bottom
+        </item>
+    </style>
+
+
+    //style
+
+    <style name="dialog_style" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/tram</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <!--animal-->
+    <style name="BottomPushAni" parent="android:Animation">
+        <item name="android:windowEnterAnimation" tools:ignore="PrivateResource">@anim/abc_slide_in_bottom</item>
+        <item name="android:windowExitAnimation" tools:ignore="PrivateResource">@anim/abc_slide_out_bottom</item>
+    </style>
+
+    <style name="dialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- <item name="android:backgroundDimEnabled">false</item>  加上这句则对话框显示时背景不变暗 -->
+    </style>
+
+</resources>
